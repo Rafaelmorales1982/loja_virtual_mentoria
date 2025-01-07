@@ -1,0 +1,5 @@
+Spring Boot Dev Tools
+Spring Data JPA
+Spring Security
+Rest Repositories
+PostgreSQL Driver
