@@ -1,0 +1,23 @@
+Sequência de classes
+1 - MarcaProduto - ok
+2- Categoria_Produto - ok
+3 - Acesso
+4 - Pessoa
+5- Pessoa_Juridica
+6 - Pessoa_Fisica
+7- Endereco
+8- Usuario
+9 - Usuario_Acesso
+10-Conta_Receber
+11 - Forma_Pagamento
+12- Conta_Pagar
+13 - Cupom_Desconto
+14 - Produto
+15 - Imagem_Produto
+16- Nota_Fiscal_Compra
+17 - Nota_Item_Produto
+18 - Status_Rastreio
+19 - Nota_Fiscal_Venda
+20 - Venda_Compra_Loja_Virtual
+21- Item_venda_Loja
+22 - Avaliacao_Produto

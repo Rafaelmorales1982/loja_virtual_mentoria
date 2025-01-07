@@ -11,31 +11,20 @@ import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
-//Pense nela como uma representação de algo que será armazenado no banco.
 @Entity
-
-
-//é uma anotação fornecida pela JPA que é usada para especificar detalhes sobre a tabela de banco de dados que será mapeada para uma entidade (classe Java).
-@Table(name = "marca_produto")
-
-// é uma anotação poderosa em JPA que permite utilizar sequências de banco de dados para gerar chaves primárias.
-@SequenceGenerator (name = "seq_marca_produto", sequenceName = "seq_marca_produto", allocationSize = 1, initialValue = 1)
-public class MarcaProduto implements Serializable {
+@Table(name = "categoria_produto")
+@SequenceGenerator(name = "seq_categoria_produto", sequenceName = "seq_categoria_produto", allocationSize = 1, initialValue = 1)//allocationSize pula de 1 em 1, initialValue inicia com 1 
+public class CategoriaProduto implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
 	
-	@Id
-	
-	
-	//Ela permite que você defina a estratégia de geração de IDs que melhor se adapta às necessidades da sua aplicação e do seu banco de dados, sem precisar gerá-los manualmente.
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_marca_produto")
+	@Id	
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_categoria_produto" )
 	private Long id;
-	
+
 	@Column(nullable = false)//false, a coluna não pode conter valores nulos. Ou seja, é obrigatório ter um valor não nulo para essa coluna.
 	private String nomeDesc;
 
-	
 	public Long getId() {
 		return id;
 	}
@@ -66,10 +55,10 @@ public class MarcaProduto implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MarcaProduto other = (MarcaProduto) obj;
+		CategoriaProduto other = (CategoriaProduto) obj;
 		return Objects.equals(id, other.id);
 	}
 	
 	
-
+	
 }
