@@ -16,6 +16,13 @@ import jakarta.persistence.Table;
 @SequenceGenerator(name = "seq_categoria_produto", sequenceName = "seq_categoria_produto", allocationSize = 1, initialValue = 1)//allocationSize pula de 1 em 1, initialValue inicia com 1 
 public class CategoriaProduto implements Serializable {
 
+	/*
+	 * 
+	 * Serialização: Transforma um objeto em uma sequência de bytes para armazenamento ou transmissão.
+
+		Desserialização: Transforma uma sequência de bytes de volta em um objeto, restaurando seu estado original.
+	 */
+	//Definir esse campo é fundamental para manter a compatibilidade e evitar erros quando você precisa serializar e deserializar objetos
 	private static final long serialVersionUID = 1L;
 	
 	@Id	

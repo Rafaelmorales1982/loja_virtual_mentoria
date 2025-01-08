@@ -1,10 +1,10 @@
 Sequência de classes
 1 - MarcaProduto - ok
 2- Categoria_Produto - ok
-3 - Acesso
-4 - Pessoa
-5- Pessoa_Juridica
-6 - Pessoa_Fisica
+3 - Acesso - Ok
+4 - Pessoa - OK
+5- Pessoa_Juridica - OK
+6 - Pessoa_Fisica  - OK
 7- Endereco
 8- Usuario
 9 - Usuario_Acesso
