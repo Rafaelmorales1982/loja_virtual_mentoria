@@ -19,10 +19,21 @@ public enum TipoEndereco {
 		
 	}
 	
+	//Função para mostrar a descrição em algum lugar do projeto
 	public String getDescricao() {
 		return this.descricao;
 	}
 
+	/*
+	 A sobrescrita do método toString() é útil nos seguintes casos:
+
+	Depuração (debugging): Ao imprimir objetos em logs ou depuradores, o método toString() fornece informações mais legíveis 
+	e relevantes sobre o objeto.
+	Exibição de dados: Em interfaces gráficas ou APIs, você pode retornar informações relevantes do objeto diretamente.
+	Legibilidade: Facilita a identificação de objetos sem acessar diretamente seus atributos.
+
+	 */
+	
 	@Override
 	public String toString() {
 		return this.descricao;

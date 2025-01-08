@@ -5,6 +5,8 @@ import java.util.Objects;
 
 import jakarta.persistence.ConstraintMode;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.ForeignKey;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,6 +15,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jdev.mentoria.lojavirtual.enums.TipoEndereco;
 
 @Entity
 @Table(name = "endereco")
@@ -53,6 +56,24 @@ public class Endereco implements Serializable {
 	@JoinColumn(name = "pessoa_id", nullable = false, foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT, name = "pessoa_fk" ))
 	private Pessoa pessoa;//associar com a classe pessoa  que tem uma chave estrangeira na tabela Endereco(tabela)
 
+	//------ENUM DA CLASSE TipoEndereco------------------
+	
+	@Enumerated(EnumType.STRING)// é uma anotação que garante que os valores de um enum sejam persistidos no banco de dados como strings correspondentes aos nomes dos valores do enum.
+	private TipoEndereco tipoEndereco;//assiciar a classe ENUM TipoEndereco dessa forma consigo utilizar seus atributos dentro da classe endereço
+	
+
+	public TipoEndereco getTipoEndereco() {
+		return tipoEndereco;
+	}
+
+	public void setTipoEndereco(TipoEndereco tipoEndereco) {
+		this.tipoEndereco = tipoEndereco;
+	}
+
+	
+	//-----------------------------------------------------
+	
+	
 	public Long getId() {
 		return id;
 	}

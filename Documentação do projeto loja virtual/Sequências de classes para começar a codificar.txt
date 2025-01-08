@@ -6,8 +6,31 @@ Sequência de classes
 5- Pessoa_Juridica - OK
 6 - Pessoa_Fisica  - OK
 7- Endereco -ok
-8- Usuario
-9 - Usuario_Acesso
+
+
+
+----------------------
+FAZER ENUM  tipo endereço - ok
+----------------------
+
+//ATRAVÉS DE ANOTAÇÕES AO CRIAR A CLASSE Usuario vai ser gerada a tabela Usuario_Acesso é uma forma utilizada no projeto real -ok
+8- Usuario -ok
+9 - Usuario_Acesso -ok
+------------------------------------
+Ter que tira da tabela usuarios_acesso
+  CONSTRAINT uk8bak9jswon2id2jbunuqlfl9e UNIQUE (acesso_id) -ok
+----------------------
+ SELECT constraint_name from information_schema.constraint_column_usage where table_name = 'usuarios_acesso' and column_name = 'acesso_id' and constraint_name <> 'unique_acesso_user'; ok
+
+alter table usuarios_acesso DROP CONSTRAINT "uk8bak9jswon2id2jbunuqlfl9e"; -ok
+
+Criar enum de status Conta Receber
+Criar o Conta a Receber
+Criar enum de conta a pagar
+Criar o Conta a Pagar
+----------------------
+
+
 10-Conta_Receber
 11 - Forma_Pagamento
 12- Conta_Pagar
