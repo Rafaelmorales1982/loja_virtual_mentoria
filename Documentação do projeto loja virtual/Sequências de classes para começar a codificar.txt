@@ -5,7 +5,7 @@ Sequência de classes
 4 - Pessoa - OK
 5- Pessoa_Juridica - OK
 6 - Pessoa_Fisica  - OK
-7- Endereco
+7- Endereco -ok
 8- Usuario
 9 - Usuario_Acesso
 10-Conta_Receber
