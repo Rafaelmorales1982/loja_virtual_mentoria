@@ -26,20 +26,27 @@ alter table usuarios_acesso DROP CONSTRAINT "uk8bak9jswon2id2jbunuqlfl9e"; -ok
 
 Criar enum de status Conta Receber - ok
 Criar o Conta a Receber - ok
-11 - Forma_Pagamento
-Criar enum de conta a pagar
-Criar o Conta a Pagar
+11 - Forma_Pagamento -ok
+Criar enum de conta a pagar -ok
+Criar o Conta a Pagar -ok
 ----------------------
 
 
-10-Conta_Receber
-11 - Forma_Pagamento
-12- Conta_Pagar
-13 - Cupom_Desconto
-14 - Produto
-15 - Imagem_Produto
-16- Nota_Fiscal_Compra
+10-Conta_Receber -ok
+11 - Forma_Pagamento -ok
+12- Conta_Pagar -ok
+
+
+13 - Cupom_Desconto - ok
+
+14 - Produto - ok
+
+15 - Imagem_Produto - (média de tamanho 500 ou até menos 200k) - ok
+
+16- Nota_Fiscal_Compra -ok
+
 17 - Nota_Item_Produto
+
 18 - Status_Rastreio
 19 - Nota_Fiscal_Venda
 20 - Venda_Compra_Loja_Virtual
