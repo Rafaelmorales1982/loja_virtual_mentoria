@@ -45,10 +45,13 @@ Criar o Conta a Pagar -ok
 
 16- Nota_Fiscal_Compra -ok
 
-17 - Nota_Item_Produto
+17 - Nota_Item_Produto - ok
 
-18 - Status_Rastreio
-19 - Nota_Fiscal_Venda
-20 - Venda_Compra_Loja_Virtual
-21- Item_venda_Loja
+18 - Status_Rastreio - ok
+
+19 - Nota_Fiscal_Venda - ok
+
+20 - Venda_Compra_Loja_Virtual -ok
+
+21- Item_venda_Loja -ok
 22 - Avaliacao_Produto
